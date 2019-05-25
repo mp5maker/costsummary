@@ -66,7 +66,9 @@ body {
     }
     .card {
         transition: all linear 0.25s;
-        min-height: 200px;
+        min-height: 250px;
+        min-width: 350px;
+        word-wrap: break-all;
         vertical-align: top;
         &:hover {
             transition: all linear 0.25s;
@@ -113,6 +115,10 @@ body {
             &::after {
                 content: "";
             }
+        }
+        .card {
+            min-width: 100%;
+            min-height: 200px;
         }
     }
 }
